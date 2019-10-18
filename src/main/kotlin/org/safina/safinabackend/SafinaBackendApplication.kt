@@ -23,8 +23,8 @@ fun main(args: Array<String>) {
 
 //	val pense = Pense(id = 1, nom = "Eric", contenue = "Content", date = "12/12/1999")
 //	penseDao.save(pense)
-//	val membre = Membre(1,"Gaetan","Gaetan","Safina","Safina","0974684530","1234",0.0,"gaetanlwmb")
-//	membreDao.save(membre)
+	val membre = Membre(1,"Gaetan","Gaetan","Safina","Safina","0974684530","1234",0.0,"gaetanlwmb")
+	membreDao.save(membre)
 //	val poule = Poule(1,"pooule","12/12/2019",40,1,50.0)
 //	pouleDao.save(poule)
 //
