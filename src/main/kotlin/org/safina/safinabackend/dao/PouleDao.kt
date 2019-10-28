@@ -21,8 +21,6 @@ interface PenseDao : CrudRepository<Pense, Long> {
 }
 @RepositoryRestResource(collectionResourceRel = "membres", path = "membres")
 interface MembreDao : CrudRepository<Membre, Long> {
-
-    @RestResource(path="searchByNameAndPassword", rel="searchByNameAndPassword")
     fun findByNonAndPwd(@Param("name") nom: String, @Param("pwd") password: String): Membre
 }
 @RepositoryRestResource(collectionResourceRel = "oeufs", path = "oeufs")
