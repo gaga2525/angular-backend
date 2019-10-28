@@ -4,6 +4,7 @@ import org.safina.safinabackend.entity.*
 import org.springframework.data.repository.CrudRepository
 import org.springframework.data.repository.query.Param
 import org.springframework.data.rest.core.annotation.RepositoryRestResource
+import org.springframework.data.rest.core.annotation.RestResource
 
 @RepositoryRestResource(collectionResourceRel = "poules", path = "poules")
 interface PouleDao : CrudRepository<Poule, Long> {
@@ -20,6 +21,9 @@ interface PenseDao : CrudRepository<Pense, Long> {
 }
 @RepositoryRestResource(collectionResourceRel = "membres", path = "membres")
 interface MembreDao : CrudRepository<Membre, Long> {
+
+    @RestResource(path="searchByNameAndPassword", rel="searchByNameAndPassword")
+    fun findByNonAndPwd(@Param("name") nom: String, @Param("pwd") password: String): Membre
 }
 @RepositoryRestResource(collectionResourceRel = "oeufs", path = "oeufs")
 interface OeufDao : CrudRepository<Oeufs, Long> {
