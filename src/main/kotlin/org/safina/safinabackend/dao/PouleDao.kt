@@ -8,7 +8,7 @@ import org.springframework.data.rest.core.annotation.RestResource
 
 @RepositoryRestResource(collectionResourceRel = "poules", path = "poules")
 interface PouleDao : CrudRepository<Poule, Long> {
-    //fun findAllByQuantite(@Param("quantite") quantite: Int) : List<Poule>
+   fun findPouleByNom(@Param("nom")nom: String):Poule
 }
 
 
