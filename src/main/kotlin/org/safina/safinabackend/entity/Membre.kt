@@ -8,13 +8,13 @@ import javax.persistence.Id
 @Entity
 class Membre (
         @Id
-        @GeneratedValue(strategy = GenerationType.AUTO) val id: Long? = null,
-        val nom: String ="",
-        val prenom: String ="",
-        val adresse: String ="",
-        val compagnie: String ="",
-        val telephone: String ="",
-        val pwd: String ="",
+        @GeneratedValue(strategy = GenerationType.AUTO) var id: Long? = null,
+        var nom: String ="",
+        var prenom: String ="",
+        var adresse: String ="",
+        var compagnie: String ="",
+        var telephone: String ="",
+        var pwd: String ="",
         var solde : Double =0.0,
-        val mail: String=""
+        var mail: String=""
 )
