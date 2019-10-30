@@ -5,6 +5,7 @@ import org.springframework.data.rest.core.config.RepositoryRestConfiguration
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapter
 import org.safina.safinabackend.entity.*
 
+@Configuration
 class RepositoryConfig : RepositoryRestConfigurerAdapter() {
     override fun configureRepositoryRestConfiguration(config: RepositoryRestConfiguration) {
         config.exposeIdsFor(Membre::class.java)
