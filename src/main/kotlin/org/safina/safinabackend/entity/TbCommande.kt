@@ -15,7 +15,7 @@ class TbCommande (
         val type: String = "",
         val quantite: Int =0,
         val etat: Boolean = true,
-        val idMEmbre : Long =0,
+        val idMembre : Long =0,
         val prixtotal: Double =0.0
 
 )
