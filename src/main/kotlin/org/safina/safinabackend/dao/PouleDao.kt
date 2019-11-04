@@ -30,5 +30,5 @@ interface OeufDao : CrudRepository<Oeufs, Long> {
 
 @RepositoryRestResource(collectionResourceRel = "cmds", path = "cmds")
 interface CmdDao : CrudRepository<TbCommande, Long> {
-    //fun findMembreByIdMembre(@Param("idmembre")idmembre:Long):List<TbCommande>
+    fun findTbCommandeByIdMembre(@Param("idmembre")idmembre:Long):List<TbCommande>
 }
