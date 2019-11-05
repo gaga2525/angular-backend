@@ -10,6 +10,7 @@ class RepositoryConfig : RepositoryRestConfigurerAdapter() {
     override fun configureRepositoryRestConfiguration(config: RepositoryRestConfiguration) {
         config.exposeIdsFor(Membre::class.java)
         config.exposeIdsFor(Photo::class.java)
+        config.exposeIdsFor(TbCommande::class.java)
 
         // config.exposeIdsFor(
         //     entityManager.getMetamodel().getEntities().stream()
