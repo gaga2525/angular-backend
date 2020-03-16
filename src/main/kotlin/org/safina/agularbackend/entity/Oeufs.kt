@@ -1,4 +1,4 @@
-package org.safina.safinabackend.entity
+package org.safina.agularbackend.entity
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
@@ -7,10 +7,12 @@ import javax.persistence.Id
 
 @Entity
 
-class Pense (
+class Oeufs (
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO) val id: Long? = null,
         val nom: String = "",
-        val contenue: String = "",
-        val date: String = ""
+        val date: String = "",
+        val quantite: Int = 0,
+        val commande: Int = 0,
+        val prix: Double = 0.0
 )

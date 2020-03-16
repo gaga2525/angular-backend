@@ -1,4 +1,4 @@
-package org.safina.safinabackend.entity
+package org.safina.agularbackend.entity
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue

@@ -1,21 +1,21 @@
-package org.safina.safinabackend
+package org.safina.agularbackend
 
-import org.safina.safinabackend.dao.MembreDao
-import org.safina.safinabackend.dao.OeufDao
-import org.safina.safinabackend.dao.PenseDao
-import org.safina.safinabackend.dao.PouleDao
-import org.safina.safinabackend.entity.Membre
-import org.safina.safinabackend.entity.Oeufs
-import org.safina.safinabackend.entity.Pense
-import org.safina.safinabackend.entity.Poule
+import org.safina.agularbackend.dao.MembreDao
+import org.safina.agularbackend.dao.OeufDao
+import org.safina.agularbackend.dao.PenseDao
+import org.safina.agularbackend.dao.PouleDao
+import org.safina.agularbackend.entity.Membre
+import org.safina.agularbackend.entity.Oeufs
+import org.safina.agularbackend.entity.Pense
+import org.safina.agularbackend.entity.Poule
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class SafinaBackendApplication
+class AngularBackendApplication
 
 fun main(args: Array<String>) {
-	val context = runApplication<SafinaBackendApplication>(*args)
+	val context = runApplication<AngularBackendApplication>(*args)
 	val penseDao = context.getBean(PenseDao::class.java)
 
 	val oeufDao = context.getBean(OeufDao::class.java)

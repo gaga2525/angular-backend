@@ -1,4 +1,4 @@
-package org.safina.safinabackend
+package org.safina.agularbackend
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner
 
 @RunWith(SpringRunner::class)
 @SpringBootTest
-class SafinaBackendApplicationTests {
+class AngularBackendApplicationTests {
 
 	@Test
 	fun contextLoads() {

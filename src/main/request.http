@@ -17,4 +17,6 @@ GET http://localhost:8080/poules
 
 ###
 
-GET http://localhost:8080/poules/search/findAllByQuantite?quantite=23
+GET http://localhost:8080/poules/search/findPouleByNom?nom=poules
+
+###
