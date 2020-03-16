@@ -8,7 +8,7 @@ import org.safina.agularbackend.entity.*
 @Configuration
 class RepositoryConfig : RepositoryRestConfigurerAdapter() {
     override fun configureRepositoryRestConfiguration(config: RepositoryRestConfiguration) {
-        config.exposeIdsFor(Membre::class.java)
+        config.exposeIdsFor(User::class.java)
         config.exposeIdsFor(Photo::class.java)
         config.exposeIdsFor(Pense::class.java)
         config.exposeIdsFor(TbCommande::class.java)
