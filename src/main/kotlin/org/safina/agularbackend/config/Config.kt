@@ -9,13 +9,8 @@ import org.safina.agularbackend.entity.*
 class RepositoryConfig : RepositoryRestConfigurerAdapter() {
     override fun configureRepositoryRestConfiguration(config: RepositoryRestConfiguration) {
         config.exposeIdsFor(User::class.java)
-        config.exposeIdsFor(Photo::class.java)
-        config.exposeIdsFor(Pense::class.java)
-        config.exposeIdsFor(TbCommande::class.java)
-
-        // config.exposeIdsFor(
-        //     entityManager.getMetamodel().getEntities().stream()
-        //     .map(Type::getJavaType)
-        //     .toArray(Class[]::new));
+        config.exposeIdsFor(Exercice::class.java)
+        config.exposeIdsFor(entree::class.java)
+        config.exposeIdsFor(sortie::class.java)
     }
 }
